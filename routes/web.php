@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/admin', 'HomeController@dashboardAdmin')->name('dashboardadmin');
+Route::get('/home', 'HomeController@dashboardMasyarakat')->name('dashboardmasyarakat');
+Route::get('/petugas', 'HomeController@dashboardPetugas')->name('dashboardpetugas');
