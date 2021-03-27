@@ -15,11 +15,13 @@ class CreatePengaduansTable extends Migration
     {
         Schema::create('pengaduans', function (Blueprint $table) {
             $table->id();
-            $table->date('tgl_pengaduan');
             $table->string('nik');
-            $table->text('isi_laporan');
+            $table->string('judul_pengaduan');
+            $table->text('isi_pengaduan');
+            $table->date('tgl_pengaduan');
+            $table->string('kota');
             $table->string('foto');
-            $table->enum('status',['0','proses','selesai']);
+            $table->enum('status',['proses','selesai']);
             $table->timestamps();
         });
     }

@@ -27,14 +27,10 @@ class HomeController extends Controller
     }
     public function dashboardAdmin()
     {
-        return view('dashboard.admin');
-    }
-    public function dashboardMasyarakat()
-    {
-        return view('dashboard.masyarakat');
+        return view('admin.dashboard');
     }
     public function dashboardPetugas()
     {
-        return view('dashboard.petugas');
+        return view('admin.dashboard');
     }
 }
