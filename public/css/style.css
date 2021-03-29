@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 16px 0;
-  background: #213b52;
+  background: #edffec;
 }
 
 #header .logo h1 {
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
-  color: #fff;
+  color: #301b3f;
   text-decoration: none;
 }
 
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #adc7de;
+  color: #213b52;
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
@@ -123,13 +123,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #fff;
+  color: #d44000;
   text-decoration: none;
 }
 
 .nav-menu .get-started a {
   background: #213b52;
-  color: #fff;
+  color: #213b52;
   border-radius: 50px;
   margin: 2px 0 0 15px;
   padding: 4px 25px 6px 25px;
@@ -346,8 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   padding: 0 0 0 0;
-  background: #213b52;
-  background: linear-gradient(180deg, #213b52 0%, #213c54 35%, #204564 100%);
+  background: #edffec;
 }
 
 #hero h1 {
@@ -355,29 +354,29 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #d2e0ed;
+  color: #301b3f;
   font-family: "Poppins", sans-serif;
 }
 
 #hero h2 {
-  color: #fff;
+  color: #301b3f;
   margin-bottom: 30px;
   font-size: 22px;
 }
 
 #hero .btn-get-started {
-  color: #213b52;
+  color: #edffec;
   border-radius: 50px;
   padding: 8px 35px 10px 35px;
-  border: 2px solid #fdc134;
+  border: 2px solid #d44000;
   transition: all ease-in-out 0.3s;
   display: inline-block;
-  background: #fdc134;
+  background: #d44000;
 }
 
 #hero .btn-get-started:hover {
-  background: transparent;
-  color: #fff;
+  background: #ffefcf;
+  color: #301b3f;
 }
 
 @media (max-width: 991px) {
@@ -423,7 +422,7 @@ section {
 }
 
 .section-bg {
-  background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
+  background: #edffec;
 }
 
 .section-title {
@@ -591,7 +590,7 @@ section {
 }
 
 .about .image {
-  background: url("../img/about.jpg") center center no-repeat;
+  background: url("../img/New\ blog\ post.png") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }

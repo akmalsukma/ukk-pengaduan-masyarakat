@@ -20,7 +20,8 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.24/gmaps.js"></script>
     <!-- Vendor CSS Files -->
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{ asset('vendor/icofont/icofont.min.css')}}" rel="stylesheet">
@@ -39,6 +40,13 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{asset('css/sb-admin-2.css')}}">
+    
+    <style type="text/css">
+        #map {
+            width: 1000px;
+            height: 600px;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
@@ -99,12 +107,57 @@
             </nav>
       </div>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
-
     </div>
 </header>
+
+                <div id="map"></div>
+                {{$count}}
+                
+                <script>
+            
+                  function initMap() {
+                    
+                    // membuat objek untuk titik koordinat
+                    var Bogor = {
+                        lat:  -6.601220630687262,
+                        lng: 106.80992672850724
+                    };
+                    
+                    // membuat objek peta
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 9,
+                      center: Bogor
+                    });
+
+                    var data= {!! json_encode($count) !!}
+            
+                    // mebuat konten untuk info window
+                    var contentString = data;
+            
+                    // membuat objek info window
+                    var infowindow = new google.maps.InfoWindow({
+                      content: contentString,
+                      position: Bogor
+                    });
+                    
+                    // membuat marker
+                    var marker = new google.maps.Marker({
+                      position: Bogor,
+                      map: map,
+                      title: 'Kota Lombok'
+                    });
+                    
+                    // event saat marker diklik
+                    marker.addListener('click', function() {
+                      // tampilkan info window di atas marker
+                      infowindow.open(map, marker);
+                    });
+                    
+                  }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+                </script>
 <div class="py-4" style="background: #edffec">
   @yield('login')
 </div>

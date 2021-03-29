@@ -8,6 +8,7 @@
           <div class="col">
             <h3 class="mb-0">User Table</h3>
           </div>
+          <a href="{{ route('printlistuser')}}" class="btn btn-sm btn-success"> Print PDF</a>
         </div>
       </div>
       <div class="table-responsive">

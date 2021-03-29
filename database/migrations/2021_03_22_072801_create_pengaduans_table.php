@@ -21,7 +21,7 @@ class CreatePengaduansTable extends Migration
             $table->date('tgl_pengaduan');
             $table->string('kota');
             $table->string('foto');
-            $table->enum('status',['proses','selesai']);
+            $table->enum('status',['menunggu','proses','selesai']);
             $table->timestamps();
         });
     }

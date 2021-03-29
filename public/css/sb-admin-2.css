@@ -10804,14 +10804,12 @@ a:focus {
 
 .bg-login-image {
   background: url("../img/Wavy_Tech-28_Single-10.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .bg-register-image {
-  background: url("../img/Wavy_Tech-01_Single-12.jpg");
+  background: url("../img/Signup.png") no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .bg-password-image {

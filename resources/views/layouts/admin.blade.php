@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Argon Dashboard - Free Dashboard for Bootstrap 4</title>
+  <title>Admin Dashboard</title>
   <!-- Favicon -->
   <link rel="icon" href="{{ asset('img/brand/favicon.png')}}" type="image/png">
   <!-- Fonts -->
@@ -26,7 +26,7 @@
       <!-- Brand -->
       <div class="sidenav-header  align-items-center">
         <a class="navbar-brand" href="#">
-          <img src="assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+          Sidebar
         </a>
       </div>
       <div class="navbar-inner">
@@ -35,7 +35,7 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link active" href="{{route('dashboardadmin')}}">
+            <a class="nav-link" href="{{route('dashboardadmin')}}">
                 <i class="ni ni-tv-2 text-primary"></i>
                 <span class="nav-link-text">Dashboard</span>
               </a>
@@ -47,7 +47,7 @@
               </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('listpengaduan')}}">
+                <a class="nav-link" href="{{route('listpengaduanadmin')}}">
                   <i class="ni ni-email-83 text-green"></i>
                   <span class="nav-link-text">Pengaduan</span>
                 </a>
@@ -132,7 +132,7 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total traffic</h5>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Total Pengaduan</h5>
                       <span class="h2 font-weight-bold mb-0">350,897</span>
                     </div>
                     <div class="col-auto">
@@ -141,10 +141,6 @@
                       </div>
                     </div>
                   </div>
-                  <p class="mt-3 mb-0 text-sm">
-                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                    <span class="text-nowrap">Since last month</span>
-                  </p>
                 </div>
               </div>
             </div>
@@ -163,10 +159,6 @@
                       </div>
                     </div>
                   </div>
-                  <p class="mt-3 mb-0 text-sm">
-                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                    <span class="text-nowrap">Since last month</span>
-                  </p>
                 </div>
               </div>
             </div>
@@ -185,10 +177,6 @@
                       </div>
                     </div>
                   </div>
-                  <p class="mt-3 mb-0 text-sm">
-                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                    <span class="text-nowrap">Since last month</span>
-                  </p>
                 </div>
               </div>
             </div>
@@ -207,10 +195,6 @@
                       </div>
                     </div>
                   </div>
-                  <p class="mt-3 mb-0 text-sm">
-                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                    <span class="text-nowrap">Since last month</span>
-                  </p>
                 </div>
               </div>
             </div>
